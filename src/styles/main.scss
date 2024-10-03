@@ -1,5 +1,26 @@
-$bgColor: yellow;
+@use 'hero';
+@use 'seasons';
+
+@font-face {
+    font-family: coolvetica;
+    src: url(../../assets/coolvetica_condensed.otf);
+}
+
+@font-face {
+    font-family: Proelium;
+    src: url(../../assets/Proelium.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: coolvetica, sans-serif;
+}
+
+$corDeFundo: #aea9a9;
 
 body {
-    background-color: $bgColor;
+    background-color: #000;
+    font-family: coolvetica, sans-serif;
 }

@@ -1,5 +1,25 @@
 .hero {
-    padding: 5.6vw;
+    padding: 5vw;
     min-height: 80vh;
-    background-image: url(../images/poster.jpg);
+    background-image: url(../images/desktop_hero.png);
+    background-size: cover;
+    text-align: center;
+
+    &__content {
+        max-width: 600px;
+        color: white;
+        margin: 250px 0 30px;
+
+        &__title {
+            letter-spacing: 10px;
+            font-size: 32px;
+            padding-bottom: 50px;
+        }
+
+        p {
+            font-size: 24px;
+            color: silver;
+            margin-bottom: 60px;
+        }  
+    }
 }

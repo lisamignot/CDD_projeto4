@@ -1,25 +1,49 @@
+@use 'variaveis';
+
 .hero {
     padding: 5vw;
     min-height: 80vh;
     background-image: url(../images/desktop_hero.png);
     background-size: cover;
     text-align: center;
+    
 
     &__content {
         max-width: 600px;
-        color: white;
+        color: variaveis.$corTextoPrincipal;
         margin: 250px 0 30px;
+        display: flex;
+        flex-direction: column;
+        
 
         &__title {
             letter-spacing: 10px;
             font-size: 32px;
-            padding-bottom: 50px;
+            margin-bottom: 50px;
+
+            &__image {
+                width: 300px;
+                margin: 0 auto;
+                padding-bottom: 16px;
+            }
         }
 
-        p {
-            font-size: 24px;
-            color: silver;
+        &__link {
+            text-decoration: none;
+            color: variaveis.$corTextoSecundario;
+            font-size: 20px;
+            cursor: pointer;
             margin-bottom: 60px;
-        }  
+            border: 3px solid transparent;
+
+            &:hover {
+                border: 3px solid red;
+            }
+        }
+
+        img:last-child {
+            width: 100px;
+            margin: 0 auto;
+        }
     }
 }

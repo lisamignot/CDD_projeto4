@@ -8,79 +8,217 @@
     <link rel="shortcut icon" href="./src/images/favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <!-- SEÇÃO HERO -->
     <section class="hero">
         <div class="hero__content">
-            <h2 class="hero__content__title">Uma série original</h3>
-            <a href="https://netflix.com.br">
-                <img src="./src/images/netflix_logo.png" alt="">
-            </a>
-            <br>
-            <p>Assista agora.</p>
-            <br>
+            <h2 class="hero__content__title">Uma série original</h2>
+            <img class="hero__content__title__image" src="dist/images/netflix_logo.png" alt="Logo Netflix">
+            <a class="hero__content__link" href="https://netflix.com.br">Assista agora.</a>
             <img src="dist/images/imdbStars.png" alt="">
         </div>
     </section>
-    <section class="characters">
 
-
+    <!-- SEÇÃO SOBRE A SÉRIE -->
+    <section class="about" id="about">
+        <div class="about__content title">
+            <p>Super.</p>
+            <p>Disfunctional.</p>
+            <p>Family.</p>
+        </div>
+        <img src="dist/images/team.png" alt="">
     </section>
-    <section class="seasons">
+
+    <!-- SEÇÃO SOBRE OS PERSONAGENS -->
+    <section class="characters" id="characters">
+        <div class="characters__title title">
+            <img class="characters__title__image" src="dist/images/umbrella_symbol.png" alt="guarda-chuva">
+            <h1>Personagens</h1>
+        </div>
+        <div class="characters__list">
+            <div class="characters__card">
+                <img class="characters__card__image" src="dist/images/personagens/number_1.jpg" alt="personagem numero 1">
+                <div class="characters__card__content text">
+                    <h4>Number 1</h4>
+                    <h5>Luther</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique eius pariatur dignissimos ad quae quis? </p>
+                </div>
+            </div>
+            <div class="characters__card">
+                <img class="characters__card__image" src="dist/images/personagens/number_2.jpg" alt="personagem numero 2">
+                <div class="characters__card__content text">
+                    <h4>Number 2</h4>
+                    <h5>Diego</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique eius pariatur dignissimos ad quae quis? </p>
+                </div>
+            </div>
+            <div class="characters__card">
+                <img class="characters__card__image" src="dist/images/personagens/number_3.jpg" alt="personagem numero 3">
+                <div class="characters__card__content text">
+                    <h4>Number 3</h4>
+                    <h5>Allison</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique eius pariatur dignissimos ad quae quis? </p>
+                </div>
+            </div>
+            <div class="characters__card">
+                <img class="characters__card__image" src="dist/images/personagens/number_4.jpg" alt="personagem numero 4">
+                <div class="characters__card__content text">
+                    <h4>Number 4</h4>
+                    <h5>Klaus</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique eius pariatur dignissimos ad quae quis? </p>
+                </div>
+            </div>
+            <div class="characters__card">
+                <img class="characters__card__image" src="dist/images/personagens/number_5.jpg" alt="personagem numero 5">
+                <div class="characters__card__content text">
+                    <h4>Number 5</h4>
+                    <h5>Number 5</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique eius pariatur dignissimos ad quae quis? </p>
+                </div>
+            </div>
+            <div class="characters__card">
+                <img class="characters__card__image" src="dist/images/personagens/number_6.jpg" alt="personagem numero 6">
+                <div class="characters__card__content text">
+                    <h4>Number 6</h4>
+                    <h5>Ben</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique eius pariatur dignissimos ad quae quis? </p>
+                </div>
+            </div>
+            <div class="characters__card">
+                <img class="characters__card__image" src="dist/images/personagens/number_7.jpg" alt="personagem numero 7">
+                <div class="characters__card__content text">
+                    <h4>Number 7</h4>
+                    <h5>Viktor</h5>
+                    <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique eius pariatur dignissimos ad quae quis? </p>
+                </div>
+            </div>
+            <div class="characters__card">
+                <img class="characters__card__image" src="dist/images/personagens/lila.jpg" alt="personagem numero 8">
+                <div class="characters__card__content text">
+                    <h4>Lila</h4>
+                    <br>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique eius pariatur dignissimos ad quae quis? </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO SOBRE AS TEMPORADAS -->
+    <section class="seasons" id="seasons">
+        <div class="seasons__title title">
+            <img class="seasons__title__image" src="dist/images/umbrella_symbol.png" alt="guarda-chuva">
+            <h1>Temporadas</h1>
+        </div>
         <nav class="seasons__tabs">
-            <button data-tab-button="season_1" class="seasons__tabs__button seasons__tabs__button--is-active">Season 1</button>
-            <button data-tab-button="season_2" class="seasons__tabs__button">Season 2</button>
-            <button data-tab-button="season_3" class="seasons__tabs__button">Season 3</button>
-            <button data-tab-button="season_4" class="seasons__tabs__button">Season 4</button>
+            <button data-tab-button="season_1" class="seasons__tabs__button seasons__tabs__button--is-active">1</button>
+            <button data-tab-button="season_2" class="seasons__tabs__button">2</button>
+            <button data-tab-button="season_3" class="seasons__tabs__button">3</button>
+            <button data-tab-button="season_4" class="seasons__tabs__button">4</button>
         </nav>
         <ul data-tab-id="season_1" class="seasons__list seasons__list--is-active">
-            <li class="seasons__list__itens">
-                <img src="dist/images/temporadas/season_1.jpg" alt="">
-            </li>
-            <li class="seasons__list__itens">
-                <img src="dist/images/temporadas/season_1.jpg" alt="">
-            </li>
-            <li class="seasons__list__itens">
-                <img src="dist/images/temporadas/season_1.jpg" alt="">
-            </li>
+            <div class="seasons__list__itens">
+                <li>
+                    <img src="dist/images/temporadas/poster_1.png" alt="poster da primeira temporada">
+                </li>
+                <li class="video">
+                    <h3>Assista o trailer:</h3>
+                    <iframe src="https://www.youtube.com/embed/5_4SW8HHfUs?si=9HtJjA5RhMaVQmTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </li>
+            </div>
         </ul>
         <ul data-tab-id="season_2" class="seasons__list">
-            <li class="seasons__list__itens">
-                <img src="dist/images/temporadas/season_2.jpg" alt="">
-            </li>
-            <li class="seasons__list__itens">
-                <img src="dist/images/temporadas/season_2.jpg" alt="">
-            </li>
-            <li class="seasons__list__itens">
-                <img src="dist/images/temporadas/season_2.jpg" alt="">
-            </li>
+            <div class="seasons__list__itens">
+                <li>
+                    <img src="dist/images/temporadas/poster_2.png" alt="poster da segunda temporada">
+                </li>
+                <li class="video">
+                    <h3>Assista o trailer:</h3>
+                    <iframe src="https://www.youtube.com/embed/28bTDcMnIh8?si=A5Z1ZVZngc18ywy8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </li>
+            </div>
         </ul>
         <ul data-tab-id="season_3" class="seasons__list">
-            <li class="seasons__list__itens">
-                <img src="dist/images/temporadas/season_3.jpg" alt="">
-            </li>
-            <li class="seasons__list__itens">
-                <img src="dist/images/temporadas/season_3.jpg" alt="">
-            </li>
-            <li class="seasons__list__itens">
-                <img src="dist/images/temporadas/season_3.jpg" alt="">
-            </li>
+            <div class="seasons__list__itens">
+                <li>
+                    <img src="dist/images/temporadas/poster_3.png" alt="poster da terceira temporada">
+                </li>
+                <li class="video">
+                    <h3>Assista o trailer:</h3>
+                    <iframe src="https://www.youtube.com/embed/u81fzyBWTO4?si=biOcsjL0Eta28MeF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </li>
+            </div>
         </ul>
         <ul data-tab-id="season_4" class="seasons__list">
-            <li class="seasons__list__itens">
-                <img src="dist/images/temporadas/season_4.jpg" alt="">
+            <div class="seasons__list__itens">
+                <li>
+                    <img src="dist/images/temporadas/poster_4.png" alt="">
+                </li>
+                <li class="video">
+                    <h3>Assista o trailer:</h3>
+                    <iframe src="https://www.youtube.com/embed/bXDSOxRGLWM?si=BhHOK92r6JcQEwe_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </li>
+            </div>
+        </ul>
+    </section>
+
+    <!-- SEÇÃO SOBRE CURIOSIDADES -->
+    <section class="curiosities" id="curiosities">
+        <div class="curiosities_title title">
+            <img class="curiosities__title__image" src="dist/images/umbrella_symbol.png" alt="guarda-chuva">
+            <h1>Curiosidades sobre a série:</h1>
+        </div>
+        <ul class="curiosities__questions">
+            <li class="curiosities__questions__item">
+                <div class="curiosities__questions__item__question" data-curiosity-question>
+                    Origem da série.
+                </div>
+                <div class="curiosities__questions__item__answer">
+                    A série é baseada na série de quadrinhos criada por Gerard Way, o vocalista da banda My Chemical Romance, e ilustrada por Gabriel Bá.
+                </div>
             </li>
-            <li class="seasons__list__itens">
-                <img src="dist/images/temporadas/season_4.jpg" alt="">
+            <li class="curiosities__questions__item">
+                <div class="curiosities__questions__item__question" data-curiosity-question>
+                    Influência Musical.
+                </div>
+                <div class="curiosities__questions__item__answer">
+                    A série é conhecida por sua seleção cuidadosa de músicas, que vão desde clássicos dos anos 60 até hits contemporâneos. Essa diversidade musical ajuda a criar uma atmosfera única e conecta diferentes épocas.
+                </div>
             </li>
-            <li class="seasons__list__itens">
-                <img src="dist/images/temporadas/season_4.jpg" alt="">
+            <li class="curiosities__questions__item">
+                <div class="curiosities__questions__item__question" data-curiosity-question>
+                    Diversidade.
+                </div>
+                <div class="curiosities__questions__item__answer">
+                    A representação de personagens LGBTQIA+ em "The Umbrella Academy" é uma parte fundamental da narrativa, levando a série a ser indicada ao Prêmio GLAAD Media.
+                </div>
             </li>
         </ul>
     </section>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__image" src="src/images/hands.jpg" alt="">
+            <ul class="footer__links">
+                <li class="footer__links__item">
+                    <a href="#about">Sobre a Série</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#characters">Personagens</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#seasons">Temporadas</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#curiosities">Curiosidades</a>
+                </li>
+            </ul>
+            <p>
+                &copy; 2024 Lisa Mignot - Curso Desenvolvedor Full Stack Python Ebac
+            </p>
+        </div>
+    </footer>
 
     <script src="src/main.js"></script>
 </body>
 </html>
 
-<!--Super.<br>
-    Disfunctional.<br>
-    Family.<br>-->

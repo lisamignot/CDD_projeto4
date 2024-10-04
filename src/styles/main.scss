@@ -1,5 +1,10 @@
+@use 'variaveis';
 @use 'hero';
+@use 'about';
+@use 'characters';
 @use 'seasons';
+@use 'curiosities';
+@use 'footer';
 
 @font-face {
     font-family: coolvetica;
@@ -11,16 +16,35 @@
     src: url(../../assets/Proelium.otf);
 }
 
+@mixin titles() {
+    font-family: Proelium, sans-serif;
+    letter-spacing: 5px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 32px;
+}
+
+@mixin text {
+    letter-spacing: 3px;
+    text-align: center;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: variaveis.$corTextoPrincipal;
+}
+
+body {
+    background-color: variaveis.$corPrincipal;
     font-family: coolvetica, sans-serif;
 }
 
-$corDeFundo: #aea9a9;
+.title {
+    @include titles();
+}
 
-body {
-    background-color: #000;
-    font-family: coolvetica, sans-serif;
+.text {
+    @include text();
 }

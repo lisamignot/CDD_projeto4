@@ -1,0 +1,25 @@
+@use 'variaveis';
+
+.about {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 2vw 5vw;
+    
+
+    &__content {
+        align-content: center;
+        padding-right: 32px;
+        
+        p {
+            text-align: right;
+            color: variaveis.$corTextoSecundario;
+        }            
+    }
+
+    img {
+        border: 15px double variaveis.$corTextoSecundario;
+        border-radius: 3px;
+    
+    }
+}

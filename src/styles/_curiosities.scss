@@ -1,0 +1,60 @@
+@use 'variaveis';
+
+.curiosities {
+    padding: 5vw;
+
+    &__title__image {
+        width: 100px;
+    }
+
+    &__questions {
+        &__item {
+            margin-bottom: 16px;
+            background-color: variaveis.$corSecundaria;
+            list-style: none;
+
+
+            &__question {
+                font-size: 24px;
+                padding: 24px;
+                display: block;
+                cursor: pointer;
+                position: relative;
+
+                &::after {
+                    content: '+';
+                    position: absolute;
+                    top: 0;
+                    right: 24px;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    font-size: 60px;
+                }
+            }
+
+            &__answer {
+                background-color: variaveis.$corTextoPrincipal;
+                color: variaveis.$corSecundaria;
+                font-size: 18px;
+                height: 0;
+                overflow: hidden;
+                margin-bottom: 16px;
+                padding: 0 24px;
+                transition: height, .5s ease;
+            }
+
+            &--is-open {
+                .curiosities__questions__item__question::after {
+                    content: '-';
+                }
+
+                .curiosities__questions__item__answer {
+                    height: auto;
+                    padding: 24px;
+                    transition: height, .5s ease;
+                }
+            }
+        }
+    }
+}

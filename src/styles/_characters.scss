@@ -1,0 +1,48 @@
+@use 'variaveis';
+
+.characters {
+    padding: 5vw;
+    
+    &__title__image {
+        width: 100px;
+}
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__card {
+        width: 300px;
+        cursor: pointer;
+        margin: 30px;
+        padding: 24px;
+        transition: all 0.6s;
+
+        &:hover {
+            transform: scale(1.3);
+        }
+
+        &__image {
+            width: 100%;
+            border-radius: 5px;
+            border: 3px double variaveis.$corTextoSecundario;
+            transition: all 0.6s;
+        }
+
+        &__content {
+            text-align: center;
+            padding: 16px;
+
+            h4 {
+                font-size: 24px;
+            }
+
+            h5 {
+                font-size: 18px;
+                padding: 8px 0;
+            }
+        }  
+    }
+}

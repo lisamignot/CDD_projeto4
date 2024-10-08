@@ -13,6 +13,10 @@
         p {
             text-align: right;
             color: variaveis.$corSecundaria;
+
+            @media (max-width: variaveis.$mobile) {
+                margin-left: 100px;
+            }
         }            
     }
 
@@ -22,13 +26,13 @@
         max-width: 100%;
         margin-left: 24px;
 
-        @media screen and (max-width: variaveis.$mobile) {
+        @media (max-width: variaveis.$mobile) {
             margin-left: 0;
         }
     }
 
     .text {
         padding: 40px 40px 0;
-        line-height: 200%;    
+        line-height: 200%;
     }
 }

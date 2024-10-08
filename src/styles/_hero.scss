@@ -8,8 +8,10 @@
     background-position: 60% top;
     text-align: center;
 
-    @media screen and (max-width: variaveis.$mobile) {
-        background-position: 75% top;
+    @media (max-width: variaveis.$mobile) {
+        background-image: url(../images/hero_smartphone_2.png);
+        background-size: contain;
+        background-repeat: no-repeat;
         display: flex;
         justify-content: center;
     }
@@ -21,14 +23,14 @@
         max-width: 350px;
         margin: 100px 0;
 
-        @media screen and (max-width: variaveis.$tablet) {
+        @media (max-width: variaveis.$tablet) {
             max-width: 250px;
             margin: 90px 0 30px;
         }
         
-        @media screen and (max-width: variaveis.$mobile) {
+        @media (max-width: variaveis.$mobile) {
             max-width: 350px;
-            padding-top: 250px;            
+            padding-top: 170px;            
         }
         
 

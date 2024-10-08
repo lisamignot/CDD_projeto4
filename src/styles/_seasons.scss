@@ -14,7 +14,7 @@
             padding: 16px;
             border-top: 10px solid transparent;
 
-            @media screen and (max-width: variaveis.$mobile) {
+            @media (max-width: variaveis.$mobile) {
                 margin-left: 0;
             }
             
@@ -49,7 +49,7 @@
             }
 
             iframe {
-                @media screen and (max-width: variaveis.$mobile) {
+                @media (max-width: variaveis.$mobile) {
                     width: 300px;
                     height: auto;
                 }

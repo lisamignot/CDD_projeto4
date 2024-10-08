@@ -19,7 +19,7 @@
         padding: 50px 30px;
         transition: all 0.6s;
 
-        @media screen and (max-width: variaveis.$mobile) {
+        @media (max-width: variaveis.$mobile) {
             width: 400px;
         }
 

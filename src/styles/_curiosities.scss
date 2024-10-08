@@ -3,18 +3,18 @@
 .curiosities {
     padding: 5vw;
 
-    &__title__image {
-        width: 100px;
+    &__title {
+        text-align: center;
     }
 
     &__questions {
         &__item {
             margin-bottom: 16px;
-            background-color: variaveis.$corSecundaria;
             list-style: none;
 
 
             &__question {
+                background-color: variaveis.$corSecundaria;
                 font-size: 24px;
                 padding: 24px;
                 display: block;
@@ -34,8 +34,7 @@
             }
 
             &__answer {
-                background-color: variaveis.$corTextoPrincipal;
-                color: variaveis.$corSecundaria;
+                border: 2px solid variaveis.$corSecundaria;
                 font-size: 18px;
                 height: 0;
                 overflow: hidden;

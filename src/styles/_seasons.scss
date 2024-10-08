@@ -2,68 +2,58 @@
 
 .seasons {
     padding: 2vw 5vw;
-
-    &__title__image {
-        width: 100px;
-    }
+    text-align: center;
     
     &__tabs {
-        display: flex;
-        justify-content: center;
-    
         &__button {
             background-color: variaveis.$corPrincipal;
-            font-size: 32px;
+            font-size: 18px;
             border: none;
             margin: 0 24px 100px;
             cursor: pointer;
             padding: 16px;
             border-top: 10px solid transparent;
+
+            @media screen and (max-width: variaveis.$mobile) {
+                margin-left: 0;
+            }
             
             &--is-active{
-                border: 10px solid red;
+                border: 8px solid variaveis.$corExtra;
             }
         }
     }
     
     &__list {
         display: none;
-        justify-content: space-around;
+        list-style: none;
         
         &--is-active {
-            display: flex;
+            display: block;
         }
 
-        &__itens {
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            list-style: none;
-            align-content: center;
-
-            .video {
-                align-content: center;
-            }
-            
+        &__image {
             img {
-                border-radius: 8px;
-                max-width: 100%;
+                width: 100%;
+                border-radius: 8px;  
+            }
+        }
 
+        &__video {
+            h3 {
+                letter-spacing: 5px;
+                text-align: center;
+                padding: 24px 0;
+                color: variaveis.$corExtra;
+                text-transform: uppercase;
             }
 
             iframe {
-                border: 3px solid white;
-                width: 550px;
-                height: 400px;
+                @media screen and (max-width: variaveis.$mobile) {
+                    width: 300px;
+                    height: auto;
+                }
             }
-
-            h3 {
-                padding-bottom: 20px;
-                font-size: 24px;
-                letter-spacing: 4px;
-            } 
         }
     }
 }
-

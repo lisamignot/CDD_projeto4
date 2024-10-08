@@ -3,47 +3,63 @@
 .hero {
     padding: 5vw;
     min-height: 80vh;
-    background-image: url(../images/desktop_hero.png);
+    background-image: url(../images/hero_desktop_menor.png);
     background-size: cover;
+    background-position: 60% top;
     text-align: center;
-    
+
+    @media screen and (max-width: variaveis.$mobile) {
+        background-position: 75% top;
+        display: flex;
+        justify-content: center;
+    }
 
     &__content {
-        max-width: 600px;
         color: variaveis.$corTextoPrincipal;
-        margin: 250px 0 30px;
         display: flex;
         flex-direction: column;
+        max-width: 350px;
+        margin: 100px 0;
+
+        @media screen and (max-width: variaveis.$tablet) {
+            max-width: 250px;
+            margin: 90px 0 30px;
+        }
+        
+        @media screen and (max-width: variaveis.$mobile) {
+            max-width: 350px;
+            padding-top: 250px;            
+        }
         
 
         &__title {
-            letter-spacing: 10px;
-            font-size: 32px;
-            margin-bottom: 50px;
+            letter-spacing: 8px;
+            font-size: 24px;
+            margin-bottom: 30px;
 
             &__image {
-                width: 300px;
+                width: 200px;
                 margin: 0 auto;
-                padding-bottom: 16px;
+                padding-bottom: 8px;
             }
         }
 
         &__link {
             text-decoration: none;
-            color: variaveis.$corTextoSecundario;
+            color: variaveis.$corSecundaria;
             font-size: 20px;
             cursor: pointer;
             margin-bottom: 60px;
             border: 3px solid transparent;
 
             &:hover {
-                border: 3px solid red;
+                border: 3px solid variaveis.$corExtra;
             }
         }
 
         img:last-child {
             width: 100px;
-            margin: 0 auto;
+            margin: 0 auto;            
         }
     }
 }

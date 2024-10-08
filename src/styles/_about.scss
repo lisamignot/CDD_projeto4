@@ -2,24 +2,33 @@
 
 .about {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
     padding: 2vw 5vw;
-    
 
     &__content {
         align-content: center;
-        padding-right: 32px;
         
         p {
             text-align: right;
-            color: variaveis.$corTextoSecundario;
+            color: variaveis.$corSecundaria;
         }            
     }
 
     img {
-        border: 15px double variaveis.$corTextoSecundario;
+        border: 15px double variaveis.$corSecundaria;
         border-radius: 3px;
-    
+        max-width: 100%;
+        margin-left: 24px;
+
+        @media screen and (max-width: variaveis.$mobile) {
+            margin-left: 0;
+        }
+    }
+
+    .text {
+        padding: 40px 40px 0;
+        line-height: 200%;    
     }
 }

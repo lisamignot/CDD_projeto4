@@ -21,7 +21,7 @@
     letter-spacing: 5px;
     margin-bottom: 40px;
     text-align: center;
-    font-size: 32px;
+    font-size: 24px;
 }
 
 @mixin text {
@@ -48,3 +48,10 @@ body {
 .text {
     @include text();
 }
+
+.umbrella_logo {
+    width: 80px;
+}
+
+
+

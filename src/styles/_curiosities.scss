@@ -11,10 +11,12 @@
         &__item {
             margin-bottom: 16px;
             list-style: none;
+            
 
 
             &__question {
                 background-color: variaveis.$corSecundaria;
+                color: variaveis.$corPrincipal;
                 font-size: 24px;
                 padding: 24px;
                 display: block;
@@ -30,6 +32,7 @@
                     display: flex;
                     align-items: center;
                     font-size: 60px;
+                    
                 }
             }
 
